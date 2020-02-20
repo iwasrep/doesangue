@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iWAS - Doe Sangue</title>
+    <meta name="author" content="iWAS - Web, Apps & Sistemas" />
+	<!-- favicon -->
+	<link rel="shortcut icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.css" />
+    <link rel="stylesheet" href="./css/owl.transitions.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="./images/logo.png" alt="DOE - iWAS">
+        <h2>A sua doação importa!</h2>
+        <p>Até 3 vidas com 1 doação</p>
+        <p>Mais de 38.000 doações são necessárias todos os dias</p>
+        <p>Apenas 1,9% da população brasileira doa sangue.</p>
+        
+        <button>Quero ajudar</button>
+    </header>
+
+    <section class="form hide">
+        <h2>Entre na lista de doadores</h2>
+        <form class="formulario" action="/" method="POST">
+            <input type="text" name="nome" id="nome" placeholder="Nome Completo" required />
+            <input type="email" name="email" id="email" placeholder="Email" required />
+            <input type="tel" name="telefone" id="telefone" placeholder="Telefone/WhatsApp" required />
+            <select id="tipo" name="tipo" required>
+                <option>Tipo sanguíneo</option>
+                <option value="O-">O-</option>
+                <option value="O+">O+</option>
+                <option value="A-">A-</option>
+                <option value="A+">A+</option>
+                <option value="B-">B-</option>
+                <option value="B+">B+</option>
+                <option value="AB-">AB-</option>
+                <option value="AB+">AB+</option>
+            </select>
+            <button>Entrar na lista</button>
+        </form>
+    </section>
+
+    <main>
+        <h2>Últimos <span>doadores</span></h2>
+        <section class="doadores">
+            <div class="owl-carousel owl-doadores owl-theme">
+                {% for doador in doadores %}
+                <div class="item doador">
+                    <div class="tipo">{{ doador.tipo }}</div>
+                    <p>{{ doador.nome }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        Desenvolvido <span>❤</span> por <a href="https://www.iwas.com.br" target="_blank" alt="Site da iWAS">iWAS</a>
+    </footer>
+    <script src="./js/jquery-1.11.2.min.js"></script>
+    <script src="./js/maskedinput-1.3.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
