@@ -23,7 +23,7 @@ Projeto desenvolvido para facilitar a informação criando dados virtual de doad
 - [ ] Desenhando o layout do projeto inicial em React-Native
 
 # Desenvolvimento
-- Tudo está sendo desenvolvido com muito carinho por Diogo Oliveira Lins, CEO da iWAS! Web, Apps & Sistemas.
+- Tudo está sendo desenvolvido com muito carinho pela [iWAS! Web, Apps & Sistemas](https://iwas.com.br).
 
 # Links
 - Site da iWAS! - [iwas.com.br](https://iwas.com.br)
